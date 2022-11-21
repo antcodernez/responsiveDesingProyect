@@ -1,0 +1,5 @@
+./assets/icons *.svg
+./assets/icons *.identifier
+./assets/img/ *.svg
+./assets/img *.png
+./assets/img *.identifier 
