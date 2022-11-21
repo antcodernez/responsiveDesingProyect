@@ -2,4 +2,5 @@
 ./assets/icons *.identifier
 ./assets/img/ *.svg
 ./assets/img *.png
-./assets/img *.identifier 
+./assets/img *.identifier
+./assets 
