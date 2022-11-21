@@ -3,4 +3,4 @@
 ./assets/img/ *.svg
 ./assets/img *.png
 ./assets/img *.identifier
-./assets 
+/assets 
