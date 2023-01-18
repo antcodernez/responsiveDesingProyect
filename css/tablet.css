@@ -3,6 +3,8 @@
         display: flex;
         width: 930px;
         margin: 0 auto;
+        overflow-x: hidden;
+        overscroll-behavior-x: none;
     }
 .product-cards--container
     {

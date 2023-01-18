@@ -24,7 +24,7 @@
         --grey: #bababa;
         --off-white: #faf8f7;
         --just-white: #fff;
-        
+        --border-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);         
         /* Fuentes */
         --secondary-font: 'Inter', sans-serif;
     }
@@ -157,13 +157,23 @@ main .main-exchange-container p
         line-height: 1.6rem;
         color: #757575;
     }
+.main-tables-container
+    {
+        display: flex;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        gap: 100px;
+    }
 main .main-tables-container .main-currency-table
     {
         width: 70%;
+        scroll-snap-align: center;
         min-width: 235px;
         max-width: 500px;
         height: 360px;
-        margin: 0 auto; /*no le va agregar un marge de arriba a abajo pero a los lados va a calcularlo */
+        /*margin: 0 auto; no le va agregar un margin de arriba a abajo pero a los lados va a calcularlo */
+        margin-left: calc(50% - 35%);
         font-family: "Inter", sans-serif;
     }
 main .main-tables-container .main-currency-table .currency-table-title
@@ -244,10 +254,12 @@ main .main-tables-container .main-currency-table .currency-table-title
 main .main-tables-container .main-commisions-table
     {
         width: 70%;
+        scroll-snap-align: center;
         min-width: 235px;
         max-width: 500px;
         height: 360px;
-        margin: 0 auto; /*no le va agregar un marge de arriba a abajo pero a los lados va a calcularlo */
+        /* margin: 0 auto; no le va agregar un marge de arriba a abajo pero a los lados va a calcularlo */
+        margin-right: calc(50% - 35%);
         font-family: "Inter", sans-serif;
     }
 main .main-tables-container .main-commisions-table .commisions-table-title
@@ -480,6 +492,7 @@ main .main-tables-container .main-commisions-table .commisions-table-title
         overflow-x: scroll;
         overscroll-behavior-x: contain;
         scroll-snap-type: x proximity;
+        gap: 100px;
     }
 .plans-container--card
     {
@@ -489,11 +502,25 @@ main .main-tables-container .main-commisions-table .commisions-table-title
         min-width: 190px;
         max-width: 300px;
         height: 250px;
-        margin: 50px 5px 0; /* arriba, derecha izquierda, abajo */
+        margin-top: 50px;  
+        /* margin: 50px 5px 0;  arriba, derecha izquierda, abajo */
         padding: 0 15px; /* arriba y abajo, derecha e izquierda */
         background-color: var(--just-white);
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    }
+.card-number--one
+    {
+        margin-left: calc(50% - 25%);
+    }
+.card-number--two
+    {
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+.card-number--three
+    {
+        margin-right: calc(50% - 25%);
+        background-image: linear-gradient(to right, #434343 0%, black 100%);
     }
 .recommended
     {
@@ -564,6 +591,38 @@ main .main-tables-container .main-commisions-table .commisions-table-title
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+.card-number--two .recommended
+    {
+        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    }
+.card-number--two .plan-card-callToAction
+    {
+        border: 2px solid rebeccapurple;
+    }
+.card-number--three .recommended
+    {
+        background: #C9CCD3;
+        background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+        background-blend-mode: lighten;
+        color: black;
+    }
+.card-number--three .plan-card-title
+    {
+        color: var(--just-white);
+    }
+.card-number--three .plan-card-price
+    {
+        color: var(--just-white);
+    }
+.card-number--three .plan-card-saving
+    {
+        color: var(--just-white);
+    }
+.card-number--three .plan-card-callToAction
+    {
+        border: none;
+        
     }
 footer
     {
