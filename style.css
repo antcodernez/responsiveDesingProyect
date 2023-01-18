@@ -486,10 +486,10 @@ main .main-tables-container .main-commisions-table .commisions-table-title
         position: relative;
         scroll-snap-align: center;/* cuando voy cambiando en mi scroll, me lo va a centrar inmediatamente a la siguiente tarjeta */
         width: 70%;
-        min-width: 230px;
+        min-width: 190px;
         max-width: 300px;
         height: 250px;
-        margin: 50px 15px 0; /* arriba, derecha izquierda, abajo */
+        margin: 50px 5px 0; /* arriba, derecha izquierda, abajo */
         padding: 0 15px; /* arriba y abajo, derecha e izquierda */
         background-color: var(--just-white);
         border-radius: 15px;
@@ -565,3 +565,59 @@ main .main-tables-container .main-commisions-table .commisions-table-title
         background-repeat: no-repeat;
         background-size: cover;
     }
+footer
+    {
+        display: flex;
+        width: 100%;
+        min-width: 320px;
+        height: 140px;
+        background-color: var(--bitcoin-orange);
+    }
+.secction-footer
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: inherit;
+    }
+.secction-footer li
+    {
+        padding-bottom: 10px;
+        list-style: none;
+    }
+.footer-left-secction li a 
+    {
+        text-decoration: none;
+        color: var(--off-white);
+        font-size: 1.2rem;
+        font-weight: 400;
+        cursor: pointer;
+    }
+.footer-left-secction .linkedin
+    {
+        margin-right: 18px;
+    }
+.footer-right-secction img
+    {
+        width: 35px;
+        height: 35px;
+        padding-bottom: 10px;
+        /* background-image: url("./assets/icons/batata.svg"); */
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+.footer-right-secction p
+    {
+        color: var(--off-white);
+        font-size: 0.8rem;
+    }
+/* Reglas opcionales para escribir codigo css
+    1. Posicionamiento
+    2. Box model
+    3. Tipografía
+    4. Visuales
+    5. Otros
+ */
